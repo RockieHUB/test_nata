@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'rest_framework',
     "pendaftaran",
     "login",
-    "dashboard"
+    "dashboard",
+    "pelatihanku"
 ]
 
 MIDDLEWARE = [

@@ -19,6 +19,7 @@ from django.urls import path
 from pendaftaran.views import RegisterAPIView
 from login.views import LoginAPIView, ProtectedAPIView
 from dashboard.views import DashboardAPIView
+from pelatihanku.views import PelatihankuAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +27,5 @@ urlpatterns = [
     path('api/login/', LoginAPIView.as_view(), name='login'),
     path('api/protected/', ProtectedAPIView.as_view(), name='protected'),
     path('api/dashboard/', DashboardAPIView.as_view(), name="Dashboard"),
+    path('api/pelatihanku/', PelatihankuAPIView.as_view(), name="Pelatihanku"),
 ]

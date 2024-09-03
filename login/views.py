@@ -5,8 +5,6 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.contrib.auth import authenticate
 from rest_framework_simplejwt.tokens import RefreshToken
-from django.contrib.auth.backends import ModelBackend
-from pendaftaran.models import Akun
 
 
 # Create your views here.
